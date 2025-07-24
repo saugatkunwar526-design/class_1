@@ -1,0 +1,70 @@
+
+.container{
+height: 400px;
+background-color: #f3e9dc;
+display: flex;
+flex: wrap;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.navbar{
+    height: 80px;
+    background-color: #c75d23;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+
+}
+.paragraph{
+    height: 300px;
+    width: 300px;
+    background-color: #f3e9dc;
+    align-items: center;
+
+}
+.image{
+height: 300px;
+width: 300px;
+background-color: blue;
+background-image: url(burg.webp);
+border-radius: 50%;
+align-items: center;
+animation:rotat 10s linear infinite ;
+}
+
+.box{
+    font-size: large;
+    background-color: #c75d23;
+    border-radius: 14px;
+}
+
+.burg{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.food{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(192, 78, 37);
+}
+
+.nav:hover{
+    text-decoration: underline rgb(229, 233, 235);
+}
+
+@keyframes rotat{
+    from{transform:rotate(odeg);}
+    to{transform:rotate(360deg);}
+}
+
+button:hover{background-color: rgb(44, 157, 44);
+    font-size: larger;
+}
+
+@media(max-width:700px){
+.image{animation: none;
+}
+}
